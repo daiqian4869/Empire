@@ -1822,7 +1822,7 @@ class PowerShellAgentMenu(SubMenu):
         if '{} returned results'.format(self.sessionID) in signal:
             results = self.mainMenu.agents.get_agent_results_db(self.sessionID)
             if results:
-                print(helpers.color(results))
+                print(helpers.color.str((results)))
 
 
     def default(self, line):
